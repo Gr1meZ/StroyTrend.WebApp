@@ -9,3 +9,8 @@ services:
     ports:
       - "8080:8080"
       - "8081:8081"
+  stroytrend.webapp-1:
+    image: stroytrend.webapp-1
+    build:
+      context: .
+      dockerfile: StroyTrend.WebApp/Dockerfile

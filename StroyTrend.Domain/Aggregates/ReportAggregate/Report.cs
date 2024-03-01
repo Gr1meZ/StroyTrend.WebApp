@@ -1,7 +1,5 @@
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using StroyTrend.Domain.Aggregates.ReportAggregate.ValueObjects;
-using StroyTrend.Domain.Aggregates.ReportAggregate.ValueObjects.Records;
 using StroyTrend.Domain.Seed;
 
 namespace StroyTrend.Domain.Aggregates.ReportAggregate;
