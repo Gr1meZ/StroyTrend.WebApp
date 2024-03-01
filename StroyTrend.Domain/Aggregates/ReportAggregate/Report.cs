@@ -39,4 +39,32 @@ public class Report
 
         return report;
     }
+    
+    public void FilterRecordsByDate(DateTime date)
+    {
+        var minDate = new DateTime(2024, 01, 01);
+        var maxDate = new DateTime(2024, 01, 14);
+
+        if (date.Date == DateTime.MinValue.Date)
+            date = minDate;
+        
+        if (date.Date == minDate.Date)
+        {
+            var firstWeek = Records.Where(r => 
+                    DateTime.Parse(r.Key) >= minDate && DateTime.Parse(r.Key) 
+                    <= new DateTime(2024, 01, 07))
+                .OrderBy(r => r.Key).ToDictionary();
+            Records = firstWeek;
+        }
+        else if (date.Date == maxDate.Date)
+        {
+            var secondWeek = Records.Where(r => 
+                    DateTime.Parse(r.Key) > new DateTime(2024, 01, 07) && DateTime.Parse(r.Key) 
+                    <= maxDate)
+                .OrderBy(r => r.Key).ToDictionary();
+            Records = secondWeek;
+        }
+     
+    }
+
 }

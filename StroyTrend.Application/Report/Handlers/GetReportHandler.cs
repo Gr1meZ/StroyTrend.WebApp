@@ -23,13 +23,9 @@ public class GetReportHandler : IQueryHandler<GetReportByTypeQuery, GetReportRes
     {
         var path = GetPathByType(request.ReportType, request.ContentPath);
         var report = await Domain.Aggregates.ReportAggregate.Report.DeserializeJsonToReport(path);
-        var specificationResult = new RecordSpecification(report.Records, request.Search, request.OrderColumn, request.OrderDir)
-            .GetSpecificationResult(request.PageNumber, request.PageSize);
-
-        var result = _mapper.Map<GetReportResult>(report);
-        result.Records = new PagedResponse<Dictionary<string, Dictionary<string, string>>>(specificationResult.Data,
-            specificationResult.Total, request.PageNumber, request.PageSize);
         
+        report.FilterRecordsByDate(request.Date);
+        var result = _mapper.Map<GetReportResult>(report);
         return result;
     }
     

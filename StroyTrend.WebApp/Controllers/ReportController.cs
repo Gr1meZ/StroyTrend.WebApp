@@ -19,11 +19,12 @@ public class ReportController : Controller
         _mapper = mapper;
     }
     
-    public async Task<IActionResult> Report(ReportType reportType)
+    public async Task<IActionResult> Report(ReportType reportType, DateTime date)
     {
-        var getReport = new GetReportByTypeQuery(reportType, Path.Combine(_webHostEnvironment.WebRootPath, "js", "json"));
+        var getReport = new GetReportByTypeQuery(reportType, Path.Combine(_webHostEnvironment.WebRootPath, "js", "json"), date);
         var result = await _mediator.Send(getReport);
         var reportViewModel = _mapper.Map<ReportViewModel>(result);
+        reportViewModel.ReportType = reportType;
         return View(reportViewModel);
     }
     

@@ -21,10 +21,8 @@ public class HomeController : Controller
         _mediator = mediator;
     }
 
-    public async Task<IActionResult> Index()
+    public IActionResult Index()
     {
-        var getReport = new GetReportByTypeQuery(ReportType.Tags, Path.Combine(_webHostEnvironment.WebRootPath, "js", "json"));
-        var result = await _mediator.Send(getReport);
         return View();
     }
 

@@ -12,8 +12,6 @@ public class ApplicationProfile : Profile
         CreateMap<Request, RequestDto>();
         CreateMap<Filter, FilterDto>();
         CreateMap<Group, GroupDto>();
-        CreateMap<Domain.Aggregates.ReportAggregate.Report, GetReportResult>()
-            .ForMember(member => member.Records, opt =>
-                opt.Ignore());
+        CreateMap<Domain.Aggregates.ReportAggregate.Report, GetReportResult>();
     }
 }

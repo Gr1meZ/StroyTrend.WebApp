@@ -10,5 +10,5 @@ public class GetReportResult
     public RequestDto Request { get;  set; }
     public int Total { get;  set; }
     
-    public PagedResponse<Dictionary<string, Dictionary<string, string>>> Records { get;  set; } 
+    public Dictionary<string, Dictionary<string, string>> Records { get;  set; } 
 }
