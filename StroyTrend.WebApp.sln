@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StroyTrend.WebApp", "StroyTrend.WebApp\StroyTrend.WebApp.csproj", "{14A97100-E910-414E-BAF8-D792F911D496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StroyTrend.Application", "StroyTrend.Application\StroyTrend.Application.csproj", "{47398A40-4603-423D-8DDF-A4A1D464B189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StroyTrend.Domain", "StroyTrend.Domain\StroyTrend.Domain.csproj", "{EC6E5417-A848-4A48-909A-3158B10EA7C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14A97100-E910-414E-BAF8-D792F911D496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A97100-E910-414E-BAF8-D792F911D496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A97100-E910-414E-BAF8-D792F911D496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A97100-E910-414E-BAF8-D792F911D496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47398A40-4603-423D-8DDF-A4A1D464B189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47398A40-4603-423D-8DDF-A4A1D464B189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47398A40-4603-423D-8DDF-A4A1D464B189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47398A40-4603-423D-8DDF-A4A1D464B189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6E5417-A848-4A48-909A-3158B10EA7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6E5417-A848-4A48-909A-3158B10EA7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6E5417-A848-4A48-909A-3158B10EA7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6E5417-A848-4A48-909A-3158B10EA7C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
