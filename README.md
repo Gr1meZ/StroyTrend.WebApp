@@ -22,7 +22,7 @@ docker-compose up -d
 
 -If you want to build your own image use this command:
 ```sh
-docker build -f .\StroyTrend.WebApp\Dockerfile -t imageName .
+docker build -f .\StroyTrend.WebApp\Dockerfile -t imagetest .
 ```
 
 # Screenshots
