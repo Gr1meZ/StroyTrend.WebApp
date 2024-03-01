@@ -1,5 +1,4 @@
 using StroyTrend.Application.Configuration.Queries;
-using StroyTrend.Application.SeedPaging;
 using StroyTrend.Domain.Aggregates.ReportAggregate;
 
 namespace StroyTrend.Application.Report.Queries;

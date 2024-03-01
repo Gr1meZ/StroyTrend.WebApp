@@ -1,12 +1,7 @@
-using System.Text.Json;
 using AutoMapper;
-using Newtonsoft.Json.Linq;
 using StroyTrend.Application.Configuration.Queries;
-using StroyTrend.Application.Report.Dto;
 using StroyTrend.Application.Report.Queries;
-using StroyTrend.Application.SeedPaging;
 using StroyTrend.Domain.Aggregates.ReportAggregate;
-using StroyTrend.Domain.Aggregates.ReportAggregate.ValueObjects.Records;
 
 namespace StroyTrend.Application.Report.Handlers;
 
